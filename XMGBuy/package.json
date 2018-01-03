@@ -1,0 +1,26 @@
+{
+  "name": "XMGBuy",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.2",
+    "react": "16.0.0",
+    "react-native": "0.51.0",
+    "react-native-iphone-x-helper": "^1.0.1",
+    "react-native-tab-navigator": "^0.3.4"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.51.7",
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
