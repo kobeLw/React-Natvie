@@ -14,11 +14,13 @@ import {
 
 /* 导入外部组件类 */
 var Main = require('./Component/Main/XMGMain');
+var Test = require('./Component/TestFolder/Test')
 
 export default class App extends Component {
   render() {
     return (
       <Main />
+      // <Test />
     );
   }
 }
