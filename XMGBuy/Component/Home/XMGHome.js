@@ -15,6 +15,7 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  ScrollView
 } from 'react-native';
 
 
@@ -22,7 +23,12 @@ var Dimensions = require('Dimensions')
 
 var {width,height} = Dimensions.get('window')
 
+/**
+ * 导入外部组件类
+ */
 var HomeDetail = require('./XMGHomeDetail')
+
+var TopView = require('./XMGTopView')
 
 
 class Home extends Component {
@@ -33,13 +39,15 @@ class Home extends Component {
           {this.renderNavBar()}
 
 
+          {/* 首页的主要内容 */}
+          <ScrollView>
+            {/* 头部view */}
+            <TopView />
+
+          </ScrollView>
 
 
-          <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
-          <Text style={styles.welcome}>
-              主要框架
-          </Text>
-          </TouchableOpacity>
+
           
         </View>
       );
