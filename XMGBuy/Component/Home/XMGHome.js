@@ -30,6 +30,8 @@ var HomeDetail = require('./XMGHomeDetail')
 
 var TopView = require('./XMGTopView')
 
+var MiddleView = require('./XMGMiddleView')
+
 
 class Home extends Component {
   render() {
@@ -43,6 +45,11 @@ class Home extends Component {
           <ScrollView>
             {/* 头部view */}
             <TopView />
+
+            {/* 中间的内容 */}
+            <MiddleView />
+
+
 
           </ScrollView>
 
@@ -127,13 +134,13 @@ const styles = StyleSheet.create({
   navRightImgStyle: { // 设置图片的大小
     width:25,
     height:25,
-    marginTop:5,
+    marginTop:5
   },
   rightNavViewStyle: {
     flexDirection:'row',
     marginTop:15,
     // height:64,
-    alignItems:'center',
+    alignItems:'center'
   }
 });
 
