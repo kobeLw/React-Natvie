@@ -38,7 +38,7 @@ class CommonView1 extends Component {
             </View>
 
             {/* 右边 */}
-            <Image source={{uri:this.props.rightIcon}} style={{width:64,height:43}} />
+            <Image source={{uri:this.props.rightIcon}} style={{width:64,height:43,resizeMode:'contain'}} />
 
 
           </View>
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
     marginBottom: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    marginRight: 1,
   },
   titleStyle: {
     fontSize: 18

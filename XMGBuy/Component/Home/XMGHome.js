@@ -32,6 +32,8 @@ var TopView = require('./XMGTopView')
 
 var MiddleView = require('./XMGMiddleView')
 
+var MiddleBottomView = require('./XMGMiddleBottomView')
+
 
 class Home extends Component {
   render() {
@@ -49,7 +51,8 @@ class Home extends Component {
             {/* 中间的内容 */}
             <MiddleView />
 
-
+            {/* 中间下半部分的内容 */}
+            <MiddleBottomView />
 
           </ScrollView>
 
@@ -95,7 +98,7 @@ class Home extends Component {
     pushToDetail() {
       this.props.navigator.push({
         component:HomeDetail,// 要跳转的版块
-        title:'详情页'
+        title:'页'
       });
     }
 }

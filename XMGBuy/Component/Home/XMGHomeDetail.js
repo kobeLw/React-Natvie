@@ -17,14 +17,16 @@ import {
 
 
 class HomeDetail extends Component {
+
+
   render() {
       return (
-        <View style={styles.container}>
-        <TouchableOpacity onPress={()=>{this.popToHome()}}>
-          <Text style={styles.welcome}>
+        <View style={styles.container} >
+          <TouchableOpacity onPress={()=>{this.popToHome()}}>
+            <Text style={styles.welcome}>
               测试跳转
-          </Text>
-        </TouchableOpacity>
+            </Text>
+          </TouchableOpacity>
         </View>
       );
     }
